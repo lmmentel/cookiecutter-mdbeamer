@@ -1,0 +1,15 @@
+{
+    "author": "Lukasz Mentel",
+    "title": "",
+    "subtitle": "",
+    "institute": "",
+    "fontsize": "10pt",
+    "aspectratio": "169",
+    "email": "lmmentel@gmail.com",
+    "project_name": "presentation",
+    "date": "November 17, 2017",
+    "_copy_without_render": [
+        "*.tex",
+        "*.sty"
+    ]
+}
