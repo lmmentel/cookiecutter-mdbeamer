@@ -20,5 +20,6 @@ The appearance is modified and you need to install the following fonts
 Install [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installation.html) and:
 
 ```bash
-$ cookiecutter cookiecutter-mdbeamer
+$ cookiecutter git@github.com:lmmentel/cookiecutter-mdbeamer.git
 ```
+
