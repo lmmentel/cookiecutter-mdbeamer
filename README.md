@@ -23,3 +23,10 @@ Install [cookiecutter](https://cookiecutter.readthedocs.io/en/latest/installatio
 $ cookiecutter git@github.com:lmmentel/cookiecutter-mdbeamer.git
 ```
 
+## Example
+
+![Title slide](example/example-0.png)
+![Slide 1](example/example-1.png)
+![Slide 1.5](example/example-2.png)
+![Slide 2](example/example-3.png)
+![Slide 3](example/example-4.png)
