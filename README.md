@@ -5,9 +5,9 @@ creating [beamer] presentations without all the tedious typing
 associated with [LaTeX].
 
 The slides contents are prepared using [markdown] which minimizes
-the typing to minimum and then the pdf slides are build through an
+the typing and then the pdf slides are build through an
 automated process first using [pandoc] to convert `.md` to `.tex`.
-Then `.tex` are converted to `.pdf` through [latexmk] using [luatex]
+Then `.tex` is converted to `.pdf` through [latexmk] using [luatex]
 as the [LaTeX] engine.
 
 
