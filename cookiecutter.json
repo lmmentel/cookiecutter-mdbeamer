@@ -6,7 +6,7 @@
     "fontsize": "10pt",
     "aspectratio": "169",
     "email": "lmmentel@gmail.com",
-    "project_name": "presentation",
+    "project_name": "slides",
     "date": "November 17, 2017",
     "_copy_without_render": [
         "*.tex",
