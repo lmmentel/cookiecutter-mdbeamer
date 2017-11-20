@@ -20,8 +20,8 @@ of the modified theme install the two following fonts:
 - [Yanone Kaffeesatz](http://yanone.de/fonts/kaffeesatz/) - used for the titles and structure elements
 - [roboto](https://www.ctan.org/tex-archive/fonts/roboto) - slide contents
 
-By syntax highlighting is using the [minted]https://ctan.org/tex-archive/macros/latex/contrib/minted/)
-package and therefore required [Python](https://www.python.org/) and [pygments](http://pygments.org/)
+By syntax highlighting is using the [minted](https://ctan.org/tex-archive/macros/latex/contrib/minted/)
+package and therefore requires [Python](https://www.python.org/) and [pygments](http://pygments.org/)
 to work properly.
 
 
@@ -43,6 +43,15 @@ Install [cookiecutter] and:
 ```bash
 $ cookiecutter git@github.com:lmmentel/cookiecutter-mdbeamer.git
 ```
+
+After modifying the `.md` file with the slide contents simply type
+
+```bash
+make pdf
+```
+
+and the slides should be built in the `build` directory.
+
 
 ### Options
 
