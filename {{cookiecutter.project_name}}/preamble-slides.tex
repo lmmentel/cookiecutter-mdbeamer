@@ -6,32 +6,22 @@
 
 \usepackage{multicol}
 \usepackage{booktabs}
-% minted and syntax highlighting
-%\usepackage{minted}
-%\usemintedstyle{monokai}
-%\setminted{fontsize=\footnotesize,escapeinside=||,bgcolor=codebg}
-%\newcommand{\pyp}{>\null>\null>}
+
 \usepackage{xcolor}
 \usepackage{tikz}
 \usepackage[linewidth=1pt,framemethod=TikZ,fontcolor=white]{mdframed}
 
 \definecolor{Nero}{HTML}{222222}
+\definecolor{crimson}{HTML}{F92672}
 \definecolor{rred}{HTML}{FF2c2d}
+\definecolor{redbg}{HTML}{D46B40}
 \definecolor{rblue}{HTML}{1B91FF}
-\definecolor{dblue}{HTML}{23373B}
-\definecolor{rgreen}{HTML}{2E623C}
-\definecolor{dgreen}{HTML}{2A4832}
+\definecolor{fgreen}{HTML}{14B03D}
 \definecolor{lgreen}{HTML}{239541}
-\definecolor{llgreen}{HTML}{14B03D}
 \definecolor{fijigreen}{HTML}{4A620C}
 \definecolor{dorange}{HTML}{F7921D}
 \definecolor{processblue}{HTML}{00B0F0}
-
-\definecolor{crimson}{HTML}{F92672}
-\definecolor{fgreen}{HTML}{14B03D}
-\definecolor{redbg}{HTML}{D46B40}
 \definecolor{codebg}{HTML}{3F3F3F}
-\definecolor{greenbg}{HTML}{14B03D}
 \definecolor{bluebg}{HTML}{3873B3}
 \definecolor{greenlink}{HTML}{AAD33B}
 \definecolor{dimgrey}{HTML}{9B9B9B}
@@ -47,20 +37,6 @@
 % change the color of the progress bar
 \setbeamercolor{progress bar}{fg=crimson, bg=Nero}
 
-% ascending fontsizes:
-% \tiny 
-% \scriptsize
-% \footnotesize
-% \small
-% \normalsize
-% \large
-% \Large
-% \LARGE
-% \huge
-% \Huge
-
-
-
 % adjust fonts
 % good alternative to roboto is lato
 \setsansfont[BoldFont={Roboto Regular}, ItalicFont={Roboto Italic}]{Roboto Light}
@@ -70,6 +46,10 @@
 \setbeamerfont{frametitle}{family=\Titles, size=\LARGE, series=\normalfont}
 \setbeamerfont{section title}{family=\Titles, size=\Large}
 \setbeamerfont{standout}{family=\Titles, size=\LARGE, series=\bfseries}
+
+% alerted text
+\setbeamerfont{alerted text}{family=\Titles}
+\setbeamercolor{alerted text}{fg=crimson, bg=Nero}
 
 % customize blocks
 \setbeamerfont{block title}{family=\Titles, size=\large}
@@ -91,26 +71,8 @@
 \newtcbox{\mybox}{nobeforeafter,colframe=greenlink,colback=greenlink,boxrule=0.8pt,%arc=10pt,
   boxsep=0pt,left=10pt,right=10pt,top=6pt,bottom=6pt,tcbox raise base}
 
-%\usepackage{hyperref}
-
-%\makeatletter
-%\Hy@AtBeginDocument{%
-%  \def\@pdfborder{0 0 1}% Overrides border definition set with colorlinks=true
-%  \def\@pdfborderstyle{/S/U/W 1}% Overrides border style set with colorlinks=true
-%                                % Hyperlink border style will be underline of width 1pt
-%}
-%\makeatother
-
-
-%\usepackage{tikz}
-%\usetikzlibrary{mindmap,graphdrawing,graphs,trees,shadows}
-%\usegdlibrary{layered,trees,circular,force}
-
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
-
-%\setbeamercolor{footnote mark}{fg=red}
-%\setbeameroption{show only notes}
 
 %\usepackage[backend=biber,style=chem-angew]{biblatex}
 %\addbibresource{library.bib}
@@ -126,3 +88,36 @@
 \newcommand{\lenitem}[2][.7\linewidth]{\parbox[t]{#1}{\strut #2\strut}}
 
 \mdfdefinestyle{myFigureBoxStyle}{backgroundcolor=codebg, roundcorner=5pt, linewidth=0pt}%
+
+\usepackage{listings}
+%\usepackage{fontspec}
+%\setmonofont{Consolas}
+
+\definecolor{background}{RGB}{39, 40, 34}
+\definecolor{string}{RGB}{230, 219, 116}
+\definecolor{comment}{RGB}{117, 113, 94}
+\definecolor{normal}{RGB}{248, 248, 242}
+\definecolor{identifier}{RGB}{166, 226, 46}
+
+\lstset{
+  language=python,                          % choose the language of the code
+  numbers=left,                         % where to put the line-numbers
+  stepnumber=1,                         % the step between two line-numbers.        
+  numbersep=5pt,                        % how far the line-numbers are from the code
+  numberstyle=\tiny\color{black}\ttfamily,
+  backgroundcolor=\color{background},       % choose the background color. You must add \usepackage{color}
+  showspaces=false,                     % show spaces adding particular underscores
+  showstringspaces=false,               % underline spaces within strings
+  showtabs=false,                       % show tabs within strings adding particular underscores
+  tabsize=4,                            % sets default tabsize to 2 spaces
+  captionpos=b,                         % sets the caption-position to bottom
+  breaklines=true,                      % sets automatic line breaking
+  breakatwhitespace=true,               % sets if automatic breaks should only happen at whitespace
+  title=\lstname,                       % show the filename of files included with \lstinputlisting;
+  basicstyle=\color{normal}\ttfamily,                   % sets font style for the code
+  keywordstyle=\color{magenta}\ttfamily,    % sets color for keywords
+  stringstyle=\color{string}\ttfamily,      % sets color for strings
+  commentstyle=\color{comment}\ttfamily,    % sets color for comments
+  emph={format_string, eff_ana_bf, permute, eff_ana_btr},
+  emphstyle=\color{identifier}\ttfamily
+}
