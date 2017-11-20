@@ -1,5 +1,8 @@
 # cookiecutter-mdbeamer
 
+
+
+
 A cookicutter template for a presentation using 
 
 - [markdown](https://daringfireball.net/projects/markdown/)
@@ -24,6 +27,8 @@ $ cookiecutter git@github.com:lmmentel/cookiecutter-mdbeamer.git
 ```
 
 ## Example
+
+The example slides are avaialble also as a [pdf](example/slides.pdf).
 
 ![Title](example/example-0.png)
 ![Paragraphs](example/example-1.png)
