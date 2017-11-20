@@ -25,8 +25,12 @@ $ cookiecutter git@github.com:lmmentel/cookiecutter-mdbeamer.git
 
 ## Example
 
-![Title slide](example/example-0.png)
-![Slide 1](example/example-1.png)
-![Slide 1.5](example/example-2.png)
-![Slide 2](example/example-3.png)
-![Slide 3](example/example-4.png)
+![Title](example/example-0.png)
+![Paragraphs](example/example-1.png)
+![Lists](example/example-4.png)
+![Theorem](example/example-5.png)
+![Math](example/example-6.png)
+![Table](example/example-7.png)
+![Image](example/example-8.png)
+![Code](example/example-9.png)
+![Final](example/example-10.png)
