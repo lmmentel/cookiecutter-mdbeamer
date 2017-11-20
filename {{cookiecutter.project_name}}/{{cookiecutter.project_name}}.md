@@ -7,36 +7,75 @@ fontsize: {{ cookiecutter.fontsize }}
 date: {{ cookiecutter.date }}
 ---
 
+# Paragraphs
 
-# Slide 1
+This is the first paragraph contents.
+
+
+Second paragraph contents.
+
+
+# Lists
 
 Contains an unordered list of stuff
 
-- first
-- second
-- third
-- fourth
+- normal item 
+- *italic item with a footnote*[^1]
+- **bold item**
+- \alert{alerted text}
+- \textcolor{fgreen}{colored item}
+- `verbatim`
 
 . . .
 
-And an ordered list
+Incrementally revealed numbered list:
 
-1. one
-2. two
-3. three
-4. four
+> 1. one
+> 2. two
 
+[^1]: footnote text
 
-# Slide 2
+# Theorem
 
 ## Theorem
 Witches float on water
 
 
-# Slide 3
+# Math
 
-The holy grail
+\begin{align}
+\left(\beta mc^2 + c \left(\sum_{n=1}^{3}\alpha_{n}p_{n}\right)\right)\psi(x, t) = i\hbar\frac{\partial\psi(x, t)}{\partial t} \notag
+\end{align}
 
-----
 
-Thank you for attention
+# Table
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+# Image
+
+![Example Image](example.png)
+
+# Code exaple
+
+```python
+import numpy as np
+from scipy.optimize import minimize
+
+def rosen(x):
+    return sum(100.0 * (x[1:] - x[:-1]**2.0)**2.0 + (1 - x[:-1])**2.0)
+
+x0 = np.array([1.3, 0.7, 0.8, 1.9, 1.2])
+res = minimize(rosen, x0, method='Powell', jac=False)
+print(res.x)
+```
+
+---
+
+\begin{center}
+{\Titles\LARGE Thank you for attention!}
+\end{center}
