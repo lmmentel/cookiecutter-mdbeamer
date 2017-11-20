@@ -1,6 +1,6 @@
 # cookiecutter-mdbeamer
 
-This is a [cookicutter] template for a quickly and comfortably
+This is a [cookiecutter] template for a quickly and comfortably
 creating [beamer] presentations without all the tedious typing
 associated with [LaTeX].
 
