@@ -20,7 +20,7 @@ of the modified theme install the two following fonts:
 - [Yanone Kaffeesatz](http://yanone.de/fonts/kaffeesatz/) - used for the titles and structure elements
 - [roboto](https://www.ctan.org/tex-archive/fonts/roboto) - slide contents
 
-By syntax highlighting is using the [minted](https://ctan.org/tex-archive/macros/latex/contrib/minted/)
+The syntax highlighting is using the [minted](https://ctan.org/tex-archive/macros/latex/contrib/minted/)
 package and therefore requires [Python](https://www.python.org/) and [pygments](http://pygments.org/)
 to work properly.
 
