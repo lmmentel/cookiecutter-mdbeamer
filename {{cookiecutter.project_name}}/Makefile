@@ -28,7 +28,7 @@ $(BUILD)/$(SOURCE_TEX): $(SOURCE_MD)
 		--slide-level 1 \
 		-H $(LATEX_PREAMBLE) \
 		-V classoption=aspectratio={{ cookiecutter.aspectratio }} \
-		--latex-engine lualatex \
+		--pdf-engine lualatex \
 		-o $@ $<
 
 $(BUILD)/$(SOURCE_PDF): $(BUILD)/$(SOURCE_TEX)
