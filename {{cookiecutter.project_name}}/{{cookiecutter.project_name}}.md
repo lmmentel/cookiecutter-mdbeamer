@@ -16,10 +16,10 @@ themeoptions:
 {% endif %}
 ---
 
-# Let's Start
+# Level 1: Section title
 
 
-# Paragraphs
+## Level 2: Frame title
 
 This is the first paragraph contents.
 
@@ -27,7 +27,7 @@ This is the first paragraph contents.
 Second paragraph contents.
 
 
-# Lists
+## Lists
 
 Contains an unordered list of stuff
 
@@ -47,20 +47,20 @@ Incrementally revealed numbered list:
 
 [^1]: footnote text
 
-# Theorem
-
 ## Theorem
+
+### Theorem
 Witches float on water
 
 
-# Math
+## Math
 
 \begin{align}
 \left(\beta mc^2 + c \left(\sum_{n=1}^{3}\alpha_{n}p_{n}\right)\right)\psi(x, t) = i\hbar\frac{\partial\psi(x, t)}{\partial t} \notag
 \end{align}
 
 
-# Table
+## Table
 
 | Tables   |      Are      |  Cool |
 |----------|:-------------:|------:|
@@ -68,11 +68,11 @@ Witches float on water
 | col 2 is |   centered    |   $12 |
 | col 3 is | right-aligned |    $1 |
 
-# Image
+## Image
 
 ![Latex logo](gfx/LaTeX.pdf)
 
-# Code example {.fragile}
+## Code example {.fragile}
 
 ```python
 import numpy as np
