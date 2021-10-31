@@ -40,10 +40,10 @@ metadata:
 # or you may use metadata-file: with a single value
 
 # Note that these take files, not their contents:
-include-before-body: ["includes/before-body.tex"]
+include-before-body: []
 include-after-body: []
-include-in-header: []
-resource-path: ["."]
+include-in-header: ["includes/before-body.tex"]
+resource-path: ["."]]
 
 # turn on built-in citation processing.  Note that if you need
 # control over when the citeproc processing is done relative
@@ -62,8 +62,8 @@ resource-path: ["."]
 # Filters are run in the order specified.
 # To include the built-in citeproc filter, use either `citeproc`
 # or `{type: citeproc}`.
-# filters:
-# - wordcount.lua
+filters:
+- minted.lua
 # - type: json
 #   path: foo.lua
 
@@ -95,7 +95,7 @@ wrap: auto
 columns: 78
 dpi: 72
 
-extract-media: mediadir
+# extract-media: mediadir
 
 table-of-contents: true
 toc-depth: 2
@@ -120,7 +120,7 @@ highlight-style: pygments
 # syntax-definitions:
 # - c.xml
 # or you may use syntax-definition: with a single value
-listings: false
+listings: true
 
 # reference-doc: myref.docx
 
