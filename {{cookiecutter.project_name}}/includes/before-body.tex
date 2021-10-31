@@ -1,0 +1,97 @@
+\usetheme[titleformat=regular,%
+          progressbar=foot,%
+          block=transparent,%
+          numbering=counter]{{ {{ cookiecutter.theme }} }}
+
+{{ cookiecutter.theme }}
+
+
+\usepackage{multicol}
+\usepackage{booktabs}
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[linewidth=1pt,framemethod=TikZ,fontcolor=white]{mdframed}
+
+% \definecolor{Nero}{HTML}{222222}
+% \definecolor{crimson}{HTML}{F92672}
+% \definecolor{rred}{HTML}{FF2c2d}
+% \definecolor{redbg}{HTML}{D46B40}
+% \definecolor{rblue}{HTML}{1B91FF}
+% \definecolor{fgreen}{HTML}{14B03D}
+% \definecolor{lgreen}{HTML}{239541}
+% \definecolor{fijigreen}{HTML}{4A620C}
+% \definecolor{dorange}{HTML}{F7921D}
+% \definecolor{processblue}{HTML}{00B0F0}
+% \definecolor{codebg}{HTML}{3F3F3F}
+% \definecolor{bluebg}{HTML}{3873B3}
+% \definecolor{greenlink}{HTML}{AAD33B}
+% \definecolor{dimgrey}{HTML}{9B9B9B}
+
+% % change the default color palette
+% \setbeamercolor{palette primary}{fg=white, bg=Nero}
+% \setbeamercolor{normal text}{fg=white, bg=Nero}
+% \setbeamercolor{title}{fg=crimson, bg=Nero}
+% \setbeamercolor{footnote}{fg=dimgrey}
+% \setbeamercolor{footnote mark}{fg=dimgrey}
+% \setbeamercolor{footline}{fg=dimgrey}
+
+% % change the color of the progress bar
+% \setbeamercolor{progress bar}{fg=crimson, bg=Nero}
+
+% % adjust fonts
+% % good alternative to roboto is lato
+% \setsansfont[BoldFont={Roboto Regular}, ItalicFont={Roboto Italic}]{Roboto Light}
+% \newfontfamily\Titles[BoldFont={Yanone Kaffeesatz Bold}]{Yanone Kaffeesatz Regular}
+% \setbeamerfont{title}{family=\Titles, size=\Huge, series=\normalfont}
+% \setbeamerfont{subtitle}{family=\Titles, size=\normalsize, series=\normalfont}
+% \setbeamerfont{frametitle}{family=\Titles, size=\LARGE, series=\normalfont}
+% \setbeamerfont{section title}{family=\Titles, size=\Large}
+% \setbeamerfont{standout}{family=\Titles, size=\LARGE, series=\bfseries}
+
+% % alerted text
+% \setbeamerfont{alerted text}{family=\Titles}
+% \setbeamercolor{alerted text}{fg=crimson, bg=Nero}
+
+% % customize blocks
+% \setbeamerfont{block title}{family=\Titles, size=\large}
+% \setbeamercolor{block title}{fg=rblue, bg=Nero}
+
+% % set all the frametitle to be centered
+% \setbeamertemplate{frametitle}[default][center]
+
+\usepackage{braket}
+\usepackage{bm}
+%bold symbols
+\newcommand{\mb}[1]{\boldsymbol{#1}}
+\newcommand{\br}{\mb{r}}
+\newcommand{\bx}{\mb{x}}
+\newcommand{\ud}{\text{d}}
+
+\usepackage{tcolorbox}
+
+\newtcbox{\mybox}{nobeforeafter,colframe=greenlink,colback=greenlink,boxrule=0.8pt,%arc=10pt,
+  boxsep=0pt,left=10pt,right=10pt,top=6pt,bottom=6pt,tcbox raise base}
+
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+
+%\usepackage[backend=biber,style=chem-angew]{biblatex}
+%\addbibresource{library.bib}
+%\setbeamertemplate{bibliography item}[text]
+
+\usepackage{tabularx}
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}
+
+\newcommand{\ans}[1]{{\color{llgreen}\textbf{#1}}}
+
+\newcommand{\lenitem}[2][.7\linewidth]{\parbox[t]{#1}{\strut #2\strut}}
+
+\mdfdefinestyle{myFigureBoxStyle}{backgroundcolor=codebg, roundcorner=5pt, linewidth=0pt}%
+
+% minted and syntax highlighting
+\usepackage{minted}
+\usemintedstyle{monokai}
+\setminted{fontsize=\footnotesize,escapeinside=||,bgcolor=codebg}
