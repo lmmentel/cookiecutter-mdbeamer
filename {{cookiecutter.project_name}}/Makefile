@@ -21,22 +21,19 @@ tex: $(BUILD)/$(SOURCE_TEX)
 pdf: $(BUILD)/$(SOURCE_PDF)
 
 clean:
-	rm -r $(BUILD) $(THEME_DIR) $(STY_DIR)
+	rm -r $(BUILD)
+
+cleansty:
+	rm -rf $(THEME_DIR) $(STY_DIR)
 
 $(BUILD)/$(SOURCE_TEX): $(SOURCE_MD)
 	mkdir -p $(BUILD)
-	$(PANDOC) -t beamer \
-		--slide-level 1 \
-		-H $(LATEX_PREAMBLE) \
-		-V classoption=aspectratio=169 \
-		--pdf-engine lualatex \
-		-o $@ $<
+	$(PANDOC) --defaults beamer -o $@ $<
 
 $(BUILD)/$(SOURCE_PDF): $(BUILD)/$(SOURCE_TEX)
 	cp $(STY_FILES) $(dir $<)
 	if [ -d $(GRAPHICS_DIR) ]; then cp -r $(GRAPHICS_DIR) $(BUILD); fi
 	cd $(dir $<); $(LATEXMK) $(notdir $<)
-
 
 # latex beamer themes
 sty:
