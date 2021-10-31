@@ -28,7 +28,7 @@ $(BUILD)/$(SOURCE_TEX): $(SOURCE_MD)
 	$(PANDOC) -t beamer \
 		--slide-level 1 \
 		-H $(LATEX_PREAMBLE) \
-		-V classoption=aspectratio={{ cookiecutter.aspectratio }} \
+		-V classoption=aspectratio=169 \
 		--pdf-engine lualatex \
 		-o $@ $<
 

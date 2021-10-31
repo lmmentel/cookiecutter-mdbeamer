@@ -19,7 +19,7 @@ Second paragraph contents.
 
 Contains an unordered list of stuff
 
-- normal item 
+- normal item
 - *italic item with a footnote*[^1]
 - **bold item**
 - \alert{alerted text}
@@ -51,9 +51,9 @@ Witches float on water
 # Table
 
 | Tables   |      Are      |  Cool |
-|----------|:-------------:|------:|
-| col 1 is |  left-aligned | $1600 |
-| col 2 is |    centered   |   $12 |
+| -------- | :-----------: | ----: |
+| col 1 is | left-aligned  | $1600 |
+| col 2 is |   centered    |   $12 |
 | col 3 is | right-aligned |    $1 |
 
 # Image

@@ -2,9 +2,15 @@
     "author": "Lukasz Mentel",
     "title": "",
     "subtitle": "",
-    "institute": "",
+    "theme": [
+        "metropolis",
+        "console",
+        "DarkConsole",
+        "focus",
+        "owl",
+        "material"
+    ],
     "fontsize": "10pt",
-    "aspectratio": "169",
     "email": "lmmentel@gmail.com",
     "project_name": "slides",
     "date": "November 17, 2017",
