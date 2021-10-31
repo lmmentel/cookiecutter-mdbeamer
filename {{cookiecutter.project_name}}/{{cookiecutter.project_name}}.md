@@ -16,6 +16,9 @@ themeoptions:
 {% endif %}
 ---
 
+# Let's Start
+
+
 # Paragraphs
 
 This is the first paragraph contents.
@@ -71,7 +74,7 @@ Witches float on water
 
 # Code example {.fragile}
 
-\begin{minted}{python}
+```python
 import numpy as np
 from scipy.optimize import minimize
 
@@ -81,7 +84,7 @@ def rosen(x):
 x0 = np.array([1.3, 0.7, 0.8, 1.9, 1.2])
 res = minimize(rosen, x0, method='Powell', jac=False)
 print(res.x)
-\end{minted}
+```
 
 ---
 
