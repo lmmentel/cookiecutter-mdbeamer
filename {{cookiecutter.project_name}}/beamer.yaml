@@ -97,7 +97,7 @@ dpi: 72
 
 # extract-media: mediadir
 
-table-of-contents: true
+table-of-contents: false
 toc-depth: 2
 number-sections: false
 # a list of offsets at each heading level
