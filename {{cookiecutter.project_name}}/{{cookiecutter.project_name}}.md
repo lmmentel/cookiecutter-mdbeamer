@@ -2,7 +2,7 @@
 title: {{ cookiecutter.title }}
 {% if cookiecutter.subtitle %}subtitle: {{ cookiecutter.subtitle }}{% endif %}
 author: {{ cookiecutter.author }}
-{% if cookiecutter.institute %}institute: {{ cookiecutter.institute }}{% endif %}
+{% if cookiecutter.affiliation %}institute: {{ cookiecutter.affiliation }}{% endif %}
 fontsize: {{ cookiecutter.fontsize }}
 date: {{ cookiecutter.date }}
 ---

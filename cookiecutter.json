@@ -2,7 +2,9 @@
     "author": "Lukasz Mentel",
     "title": "",
     "subtitle": "",
+    "affiliation": "",
     "theme": [
+        "metropolisdark",
         "metropolis",
         "console",
         "DarkConsole",
@@ -13,7 +15,7 @@
     "fontsize": "10pt",
     "email": "lmmentel@gmail.com",
     "project_name": "slides",
-    "date": "November 17, 2017",
+    "date": "November 1, 2021",
     "_copy_without_render": [
         "*.tex",
         "*.sty"
