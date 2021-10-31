@@ -136,7 +136,7 @@ tab-stop: 8
 preserve-tabs: true
 
 incremental: false
-slide-level: 2
+slide-level: 3
 
 # epub-subdirectory: EPUB
 # epub-metadata: meta.xml
