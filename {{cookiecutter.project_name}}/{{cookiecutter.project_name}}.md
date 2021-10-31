@@ -3,8 +3,17 @@ title: {{ cookiecutter.title }}
 {% if cookiecutter.subtitle %}subtitle: {{ cookiecutter.subtitle }}{% endif %}
 author: {{ cookiecutter.author }}
 {% if cookiecutter.affiliation %}institute: {{ cookiecutter.affiliation }}{% endif %}
-fontsize: {{ cookiecutter.fontsize }}
+fontsize: 10pt
 date: {{ cookiecutter.date }}
+
+theme: {{ cookiecutter.theme }}
+{% if cookiecutter.theme == "metropolis" %}
+themeoptions:
+- titleformat=regular
+- progressbar=foot
+- block=transparent
+- numbering=counter
+{% endif %}
 ---
 
 # Paragraphs
@@ -51,7 +60,7 @@ Witches float on water
 # Table
 
 | Tables   |      Are      |  Cool |
-| -------- | :-----------: | ----: |
+|----------|:-------------:|------:|
 | col 1 is | left-aligned  | $1600 |
 | col 2 is |   centered    |   $12 |
 | col 3 is | right-aligned |    $1 |
