@@ -17,6 +17,7 @@
     "date": "November 1, 2021",
     "_copy_without_render": [
         "*.tex",
-        "*.sty"
+        "*.sty",
+        "*.lua"
     ]
 }
