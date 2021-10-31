@@ -7,7 +7,7 @@ to: beamer
 output-file:
 # leave blank for input from stdin, use [] for no input:
 # input-files:
-# - {{ cookiecutter.project_name }}
+# - {{ cookiecutter.project_name }}.md
 # or you may use input-file: with a single value
 
 # Include options from the specified defaults files.
@@ -40,7 +40,7 @@ metadata:
 # or you may use metadata-file: with a single value
 
 # Note that these take files, not their contents:
-include-before-body: ["preamble-slides.tex"]
+include-before-body: ["includes/before-body.tex"]
 include-after-body: []
 include-in-header: []
 resource-path: ["."]
