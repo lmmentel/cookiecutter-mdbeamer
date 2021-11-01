@@ -37,6 +37,7 @@ First make sure you have the following dependencies installed:
 
 - [cookiecutter]
 - [pygments]
+- [minted.lua](https://github.com/pandoc/lua-filters/tree/master/minted)
 
 Install [cookiecutter] and:
 
