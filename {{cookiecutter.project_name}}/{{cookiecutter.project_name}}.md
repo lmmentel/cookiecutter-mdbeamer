@@ -35,7 +35,6 @@ Contains an unordered list of stuff
 - *italic item with a footnote*[^1]
 - **bold item**
 - \alert{alerted text}
-- \textcolor{fgreen}{colored item}
 - `verbatim`
 
 . . .
@@ -86,8 +85,4 @@ res = minimize(rosen, x0, method='Powell', jac=False)
 print(res.x)
 ```
 
----
-
-\begin{center}
-{\Titles\LARGE Thank you for attention!}
-\end{center}
+# Thank you for attention!
