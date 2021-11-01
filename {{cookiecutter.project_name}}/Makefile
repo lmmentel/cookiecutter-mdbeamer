@@ -53,7 +53,7 @@ focus: sty
 	git clone git@github.com:elauksap/focus-beamertheme.git $(THEME_DIR)
 	cp $(THEME_DIR)/*.sty $(STY_DIR)/
 
-console: sty
+DarkConsole: sty
 	git clone git@github.com:kmaed/kmbeamer.git $(THEME_DIR)
 	cp $(THEME_DIR)/*.sty $(STY_DIR)/
 
