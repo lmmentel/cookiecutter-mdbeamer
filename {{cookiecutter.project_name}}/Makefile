@@ -39,24 +39,28 @@ $(BUILD)/$(SOURCE_PDF): $(BUILD)/$(SOURCE_TEX)
 sty:
 	mkdir -p $(STY_DIR)
 
-metropolis: sty
+rmtheme:
+	if test -d $(THEME_DIR); then rm -rf $(THEME_DIR); else echo $(THEME_DIR); fi
+
+
+metropolis: sty rmtheme
 	git clone git@github.com:matze/mtheme.git $(THEME_DIR)
 	$(MAKE) -C $(THEME_DIR) sty
 	cp $(THEME_DIR)/*.sty $(STY_DIR)/
 
-owl: sty
+owl: sty rmtheme
 	git clone git@github.com:rchurchley/beamercolortheme-owl.git $(THEME_DIR)
 	$(MAKE) -C $(THEME_DIR) sty
 	cp $(THEME_DIR)/*.sty $(STY_DIR)/
 
-focus: sty
+focus: sty rmtheme
 	git clone git@github.com:elauksap/focus-beamertheme.git $(THEME_DIR)
 	cp $(THEME_DIR)/*.sty $(STY_DIR)/
 
-DarkConsole: sty
+console: sty rmtheme
 	git clone git@github.com:kmaed/kmbeamer.git $(THEME_DIR)
 	cp $(THEME_DIR)/*.sty $(STY_DIR)/
 
-material: sty
+material: sty rmtheme
 	git clone git@github.com:edasubert/beamerMaterialDesign.git $(THEME_DIR)
 	cp $(THEME_DIR)/*.sty $(STY_DIR)/
